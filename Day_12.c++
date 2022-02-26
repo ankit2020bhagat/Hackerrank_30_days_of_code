@@ -43,26 +43,28 @@ public:
             return 'O';
         else if (avg >= 80 && avg < 90)
             return 'E';
-        else if(avg>=70 && avg<80)
+        else if (avg >= 70 && avg < 80)
             return 'A';
-        else if(avg>=55 && avg<70)
+        else if (avg >= 55 && avg < 70)
             return 'P';
-        else if(avg>=40 && avg<55)
+        else if (avg >= 40 && avg < 55)
             return 'D';
         else
-            return 'T';             
+            return 'T';
     }
 };
 
 int main()
-{ 
+{
     string f_name;
     string l_name;
-    int id,l,data;
+    int id, l, data;
     vector<int> test;
-    cin>>f_name>>l_name>>id;
-    for(int i=0;i<l;i++){
-       cin>>data;
-       test.push_back(data);
+    cin >> f_name >> l_name >> id;
+
+    for (int i = 0; i < l; i++)
+    {
+        cin >> data;
+        test.push_back(data);
     }
 }
