@@ -10,7 +10,7 @@ public:
     {
         if (n < 0 || p < 0)
         {
-            throw "n and p should be non-negative";
+           throw runtime_error ("n and p should be non-negative") ;
         }
         return pow(n, p);
     }

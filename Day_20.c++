@@ -24,12 +24,7 @@ int Bubble_Sort(int *arr, int size)
     }
     return count;
 }
-void Print(int *arr,int size){
-    for(int i=0;i<size;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
+
 int main()
 {
     int size, data;
@@ -42,7 +37,7 @@ int main()
     }
 
     cout<<"Array is sorted in "<<Bubble_Sort(arr, size)<< "swaps."<<"\n";
-    Print(arr,size);
+   // Print(arr,size);
     cout<<"First Element:" <<arr[0]<<"\n";
     cout<<"Last Element:" <<arr[size-1]<<"\n";
 

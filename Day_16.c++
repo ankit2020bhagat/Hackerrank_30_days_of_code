@@ -2,8 +2,8 @@
 #include <string>
 using namespace std;
 int main(){
-    string str="8";
-     
+    string str;
+     cin>>str;
     try{
        int num = stoi(str);
       cout<<num <<endl;
