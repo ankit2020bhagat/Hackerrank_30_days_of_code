@@ -21,13 +21,33 @@ int minimum_index(vector<int> seq) {
 }
 class TestDataEmptyArray{
     public:
-        int *arr=new int();
-        int * get_array(){
-            return arr;
+        static vector<int> get_array(){
+            vector<int> v1;
+            return v1;
         }
     
 };
+class TestDataUniqueValues{
+    public:
+    static vector<int> get_array(){
+            vector<int> v1={1,2,3};
+            return v1;
+        }
+        static int get_expected_result(){
+             return 0;
+        }
+};
+class TestDataExactlyTwoDifferentMinimums{
+    public:
+    static vector<int> get_array(){
+            vector<int> v1={1,1,2,3};
+            return v1;
+        }
+        static int get_expected_result(){
+             return 0;
+        }
 
+};
 
 void TestWithEmptyArray() {
     try {
